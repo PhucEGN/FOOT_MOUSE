@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgb(112, 203, 245);
+    color: white;
+    text-align: center;
+}
+.h1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(112, 203, 245);
+    color: white;
+    text-align: center;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+.button table {
+    width: 100%;
+}
+
+.button td {
+    width: 50%;
+}
+
+button, input {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px; 
+    border: none;
+    box-sizing: border-box;
+}
+
+.on {
+    background-color: #4caf50;
+    color: white;
+    border-radius: 40px; 
+}
+
+.off {
+    background-color: #f44336;
+    color: white;   
+    border-radius: 40px; 
+}
+
+.bang, .timer, .timer2, .timer3, .timer4, .deviceselect, .push, .pushtime, .stoptime {
+    background-color: #e0e0e0;
+    border-radius: 40px; 
+}
+
+.push {
+    background-color: #5fc7ff;
+    border-radius: 40px; 
+}
+
+.pushtime {
+    background-color: #3aff48;
+    border-radius: 40px; 
+}
+.stoptime {
+    background-color: #ff6363;
+    border-radius: 40px; 
+}
