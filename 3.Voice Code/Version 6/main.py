@@ -11,7 +11,7 @@ import threading
 #----------------------------------------------------------------------------------------------------------------------------------
 
 # Hàm thực hiện copy paste
-def pasteString(message)
+def pasteString(message):
     pyperclip.copy(message)
     pyautogui.hotkey('ctrl', 'v')
     print("Đã dán tin nhắn: ", message)
