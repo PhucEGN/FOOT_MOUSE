@@ -6,7 +6,7 @@
 #include <WiFiClient.h>
 #include <BlynkSimpleEsp32.h>
 
-char ssid[] = "THIEN TRANG ";
+char ssid[] = "THIEN TRANG";
 char pass[] = "phucnhannghia";
 //-------------------------------------------------
 #include <BleMouse.h>
